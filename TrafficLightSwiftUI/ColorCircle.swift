@@ -13,7 +13,7 @@ struct ColorCircle: View {
         Circle()
             .foregroundColor(color)
             .frame(width: 150, height: 150, alignment: .center)
-            .overlay(Circle().stroke(Color.white, lineWidth: 4))
+            .overlay(Circle().stroke(Color.blue, lineWidth: 5))
     }
 }
 
