@@ -10,6 +10,7 @@ import SwiftUI
 struct ColorCircle: View {
     let color: Color
     var opacity = 0.0
+    
     var body: some View {
         Circle()
             .foregroundColor(color)
@@ -21,6 +22,6 @@ struct ColorCircle: View {
 
 struct ColorCircle_Previews: PreviewProvider {
     static var previews: some View {
-        ColorCircle(color: .red, opacity: 0.5)
+        ColorCircle(color: .red, opacity: 1.0)
     }
 }
