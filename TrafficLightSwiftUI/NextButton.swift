@@ -20,7 +20,7 @@ struct NextButton: View {
         .cornerRadius(20)
         .overlay(
             RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.red, lineWidth: 5)
+                .stroke(Color.white, lineWidth: 5)
         )
     }
 }
