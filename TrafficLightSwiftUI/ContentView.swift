@@ -9,12 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ColorCircle(color: .red)
-            ColorCircle(color: .yellow)
-            ColorCircle(color: .green)
+        
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            VStack(spacing: 200.0) {
+                VStack(spacing: 20.0) {
+                    ColorCircle(color: .red)
+                    ColorCircle(color: .yellow)
+                    ColorCircle(color: .green)
+                }
+                NextButton()
+            }
         }
-        .background(Color.black)
     }
 }
 
