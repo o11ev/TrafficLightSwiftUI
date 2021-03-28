@@ -26,18 +26,19 @@ struct ContentView: View {
                     ColorCircle(color: .green, opacity: enabledLight == 3 ? light : dark)
                 }
                 
-                Button(action: { buttonAction() },label: {
-                        Text(buttonText)
-                            .padding(.horizontal, 30.0)})
-                    .font(.largeTitle)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(20)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white, lineWidth: 4)
-                    )
+                Button(action: buttonAction) {
+                    Text(buttonText)
+                        .padding(.horizontal, 30.0)
+                }
+                .font(.largeTitle)
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(20)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(Color.white, lineWidth: 4)
+                )
             }
         }
     }
